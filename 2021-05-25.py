@@ -203,7 +203,7 @@ def normalize_copy(numbers):
 #assert sum(percentages) == 100
 
 
-#もう一つの解決策として，ジェネレータを呼び出して，新たなイテレータをそのたびに生成する
+# もう一つの解決策として，ジェネレータを呼び出して，新たなイテレータをそのたびに生成する
 def normalize_func(get_iter):
     total = sum(get_iter())
     result = []
@@ -217,3 +217,5 @@ path = 'my_numbers.txt'
 percentages = normalize_func(lambda: read_visits(path))
 print(percentages)
 assert sum(percentages) == 100
+
+# よりよい解決策として，「イテレータプロトコル」
