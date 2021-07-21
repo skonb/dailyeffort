@@ -6,7 +6,7 @@ rm today.py
 ln -s  {$today}.py today.py
 code today.py
 #C++
-touch {$today}.c
-rm today.c
-ln -s  {$today}.cpp today.c
-code today.c
+touch {$today}.cpp
+rm today.coo
+ln -s  {$today}.cpp today.cpp
+code today.cpp
